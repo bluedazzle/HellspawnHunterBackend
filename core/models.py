@@ -59,7 +59,7 @@ class Membership(BaseModel):
     count = models.IntegerField(default=1)
 
     def __unicode__(self):
-        return '{0}X{1} - {2}'.format(self.hellspawn.name, self.count, self.team.name)
+        return '{0}X{1} - {2}{3}'.format(self.hellspawn.name, self.count, self.team.belong.name, self.team.name)
 
 
 class Clue(BaseModel):

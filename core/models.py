@@ -30,11 +30,19 @@ class Hellspawn(BaseModel):
 class Scene(BaseModel):
     name = models.CharField(max_length=20)
     icon = models.CharField(max_length=128, null=True, blank=True)
-    monsters = models.ManyToManyField(Hellspawn, related_name='hellspawn_scenes', through='Membership',
-                                      through_fields=('scene', 'hellspawn'))
 
     def __unicode__(self):
         return self.name
+
+
+class Team(BaseModel):
+    name = models.CharField(max_length=20)
+    monsters = models.ManyToManyField(Hellspawn, related_name='hellspawn_teams', through='Membership',
+                                      through_fields=('team', 'hellspawn'))
+    belong = models.ForeignKey(Scene, related_name='scene_teams')
+
+    def __unicode__(self):
+        return '{0}: {1}'.format(self.belong.name, self.name)
 
 
 class Secret(BaseModel):
@@ -46,12 +54,12 @@ class Secret(BaseModel):
 
 
 class Membership(BaseModel):
-    scene = models.ForeignKey(Scene, on_delete=models.CASCADE)
+    team = models.ForeignKey(Team, on_delete=models.CASCADE, null=True, blank=True)
     hellspawn = models.ForeignKey(Hellspawn, on_delete=models.CASCADE)
     count = models.IntegerField(default=1)
 
     def __unicode__(self):
-        return '{0}X{1} - {2}'.format(self.hellspawn.name, self.count, self.scene.name)
+        return '{0}X{1} - {2}'.format(self.hellspawn.name, self.count, '1')
 
 
 class Clue(BaseModel):

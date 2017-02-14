@@ -8,7 +8,7 @@ from django.views.generic import ListView
 from core.Mixin.CheckMixin import CheckSecurityMixin
 from core.Mixin.StatusWrapMixin import StatusWrapMixin
 from core.dss.Mixin import MultipleJsonResponseMixin
-from core.models import Hellspawn, Scene, Clue
+from core.models import Hellspawn, Scene, Clue, Team
 
 
 class HellspawnListView(CheckSecurityMixin, StatusWrapMixin, MultipleJsonResponseMixin, ListView):
@@ -21,7 +21,12 @@ class SceneListView(CheckSecurityMixin, StatusWrapMixin, MultipleJsonResponseMix
     many = True
     foreign = True
     paginate_by = 10
-    exclude_attr = ['create_time', 'modify_time']
+    exclude_attr = ['create_time', 'modify_time', 'belong']
+
+    def get_queryset(self):
+        queryset = super(SceneListView, self).get_queryset()
+        map(lambda obj: setattr(obj, 'team_list', obj.scene_teams.all()), queryset)
+        return queryset
 
 
 class ClueListView(CheckSecurityMixin, StatusWrapMixin, MultipleJsonResponseMixin, ListView):

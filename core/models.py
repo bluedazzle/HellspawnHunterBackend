@@ -22,6 +22,8 @@ class Hellspawn(BaseModel):
     rarity = models.IntegerField(choices=rarity_choice, default=4)
     picture = models.CharField(max_length=128, null=True, blank=True)
     icon = models.CharField(max_length=128, null=True, blank=True)
+    clue1 = models.CharField(max_length=30, null=True, blank=True)
+    clue2 = models.CharField(max_length=30, null=True, blank=True)
 
     def __unicode__(self):
         return '{0}-{1}'.format(self.name, self.rarity_choice[self.rarity - 1][1])
@@ -60,13 +62,3 @@ class Membership(BaseModel):
 
     def __unicode__(self):
         return '{0}X{1} - {2}{3}'.format(self.hellspawn.name, self.count, self.team.belong.name, self.team.name)
-
-
-class Clue(BaseModel):
-    value1 = models.CharField(max_length=30)
-    value2 = models.CharField(max_length=30, null=True, blank=True)
-    hellspawn = models.ForeignKey(Hellspawn, related_name='hellspawn_clues', on_delete=models.SET_NULL, null=True,
-                                  blank=True)
-
-    def __unicode__(self):
-        return self.value1

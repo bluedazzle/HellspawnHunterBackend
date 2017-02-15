@@ -44,6 +44,7 @@ class Serializer(object):
         self.many = many
         self.through = through
         self.through_fields = []
+        self.source_field = None
         self.datetime_format = datetime_format
         self.time_func = TimeFormatFactory.get_time_func(datetime_format)
         self._dict_check = kwargs.get('dict_check', False)
@@ -60,7 +61,7 @@ class Serializer(object):
             convert_data = []
             if extra:
                 for i, obj in enumerate(data):
-                    convert_data.append(self.data_inspect(obj, extra[i]))
+                    convert_data.append(self.data_inspect(obj, extra.get(**{self.through_fields[0]: obj, self.through_fields[1]: self.source_field})))
             else:
                 for obj in data:
                     convert_data.append(self.data_inspect(obj))
@@ -95,8 +96,9 @@ class Serializer(object):
             through_list = data.through._meta.concrete_model._meta.local_fields
             through_data = data.through._default_manager
             self.through_fields = [data.target_field.name, data.source_field.name]
+            self.source_field = data.instance
             if len(through_list) > 3 and self.through:
-                return self.data_inspect(data.all(), through_data.all())
+                return self.data_inspect(data.all(), through_data)
             else:
                 return self.data_inspect(data.all())
         elif isinstance(data, (datetime.datetime, datetime.date, datetime.time)):

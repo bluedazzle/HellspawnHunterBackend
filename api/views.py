@@ -24,10 +24,10 @@ class HellspawnDetailView(CheckSecurityMixin, StatusWrapMixin, JsonResponseMixin
     model = Hellspawn
     pk_url_kwarg = 'id'
 
-    def get_object(self, queryset=None):
-        obj = super(HellspawnDetailView, self).get_object(queryset)
-        obj.rarity = unicode(obj.rarity_choice[obj.rarity - 1][1]).lower()
-        return obj
+    # def get_object(self, queryset=None):
+    #     obj = super(HellspawnDetailView, self).get_object(queryset)
+    #     obj.rarity = unicode(obj.rarity_choice[obj.rarity - 1][1]).lower()
+    #     return obj
 
 
 class SceneListView(CheckSecurityMixin, StatusWrapMixin, MultipleJsonResponseMixin, ListView):

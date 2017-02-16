@@ -26,7 +26,7 @@ class HellspawnDetailView(CheckSecurityMixin, StatusWrapMixin, JsonResponseMixin
 
     def get_object(self, queryset=None):
         obj = super(HellspawnDetailView, self).get_object(queryset)
-        obj.rarity = obj.rarity_choice[obj.rarity - 1][1]
+        obj.rarity = unicode(obj.rarity_choice[obj.rarity - 1][1]).lower()
         return obj
 
 

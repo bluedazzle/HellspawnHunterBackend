@@ -131,7 +131,8 @@ class PopularListView(CheckSecurityMixin, StatusWrapMixin, MultipleJsonResponseM
                 key_list = popular_list[:8]
             popular_list = []
             for itm in key_list:
-                key_dict = {"name": cache.get(itm)}
+                key_dict = {"name": cache.get(itm),
+                            "id": itm}
                 popular_list.append(key_dict)
             return self.render_to_response({'popular_list': popular_list})
         return self.render_to_response({'popular_list': []})

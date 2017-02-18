@@ -14,6 +14,7 @@ from core.dss.Mixin import MultipleJsonResponseMixin, JsonResponseMixin
 from core.dss.Serializer import serializer
 from core.models import Hellspawn, Scene, Team, Membership, Feedback
 from core.Mixin import StatusWrapMixin as SW
+from django.core.cache import cache
 
 
 class HellspawnListView(CheckSecurityMixin, StatusWrapMixin, MultipleJsonResponseMixin, ListView):
@@ -25,10 +26,10 @@ class HellspawnDetailView(CheckSecurityMixin, StatusWrapMixin, JsonResponseMixin
     model = Hellspawn
     pk_url_kwarg = 'id'
 
-    # def get_object(self, queryset=None):
-    #     obj = super(HellspawnDetailView, self).get_object(queryset)
-    #     obj.rarity = unicode(obj.rarity_choice[obj.rarity - 1][1]).lower()
-    #     return obj
+    def get_object(self, queryset=None):
+        obj = super(HellspawnDetailView, self).get_object(queryset)
+        cache.set(obj.id, obj.name, 60 * 60 * 6)
+        return obj
 
 
 class SceneListView(CheckSecurityMixin, StatusWrapMixin, MultipleJsonResponseMixin, ListView):
@@ -115,3 +116,22 @@ class FeedbackView(CheckSecurityMixin, StatusWrapMixin, JsonResponseMixin, JsonR
         self.message = '参数缺失'
         self.status_code = SW.ERROR_DATA
         return self.render_to_response({})
+
+
+class PopularListView(CheckSecurityMixin, StatusWrapMixin, MultipleJsonResponseMixin, ListView):
+    model = Hellspawn
+    http_method_names = ['get']
+
+    def get(self, request, *args, **kwargs):
+        if not self.wrap_check_sign_result():
+            return self.render_to_response(dict())
+        key_list = cache.keys("*")
+        if key_list:
+            if len(key_list) > 8:
+                key_list = popular_list[:8]
+            popular_list = []
+            for itm in key_list:
+                key_dict = {"name": cache.get(itm)}
+                popular_list.append(key_dict)
+            return self.render_to_response({'popular_list': popular_list})
+        return self.render_to_response({'popular_list': []})

@@ -8,6 +8,7 @@ from django.shortcuts import render
 from django.views.generic import ListView, DetailView
 
 from core.Mixin.CheckMixin import CheckSecurityMixin
+from core.Mixin.JsonRequestMixin import JsonRequestMixin
 from core.Mixin.StatusWrapMixin import StatusWrapMixin
 from core.dss.Mixin import MultipleJsonResponseMixin, JsonResponseMixin
 from core.dss.Serializer import serializer
@@ -92,7 +93,7 @@ class HellspawnSceneListView(CheckSecurityMixin, StatusWrapMixin, JsonResponseMi
             {'scene_list': sorted(scenes, key=lambda x: x.hellspawn_info['count'], reverse=True)})
 
 
-class FeedbackView(CheckSecurityMixin, StatusWrapMixin, JsonResponseMixin, DetailView):
+class FeedbackView(CheckSecurityMixin, StatusWrapMixin, JsonResponseMixin, JsonRequestMixin, DetailView):
     model = Feedback
     http_method_names = ['post']
 

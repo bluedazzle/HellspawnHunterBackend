@@ -1,3 +1,4 @@
+# coding: utf-8
 from __future__ import unicode_literals
 
 from django.db import models
@@ -62,3 +63,17 @@ class Membership(BaseModel):
 
     def __unicode__(self):
         return '{0}X{1} - {2}{3}'.format(self.hellspawn.name, self.count, self.team.belong.name, self.team.name)
+
+
+class Feedback(BaseModel):
+    feed_choice = [(1, '数据报错'),
+                   (2, '吐槽建议')]
+
+    content = models.TextField()
+    feed_type = models.IntegerField(default=1, choices=feed_choice)
+    scene = models.ForeignKey(Scene, null=True, blank=True)
+
+    def __unicode__(self):
+        if self.scene:
+            return '{0}-{1}'.format(self.feed_choice[self.feed_type - 1][1], self.scene.name)
+        return self.feed_choice[self.feed_type - 1][1]

@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^scene/(?P<id>(\d)+)', SceneDetailView.as_view()),
     url(r'^scenes/', SceneListView.as_view()),
     url(r'^search/(?P<value>.+)', SearchListView.as_view()),
+    url(r'^feedback', FeedbackView.as_view()),
 ]

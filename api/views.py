@@ -11,7 +11,7 @@ from core.Mixin.CheckMixin import CheckSecurityMixin
 from core.Mixin.StatusWrapMixin import StatusWrapMixin
 from core.dss.Mixin import MultipleJsonResponseMixin, JsonResponseMixin
 from core.dss.Serializer import serializer
-from core.models import Hellspawn, Scene, Team, Membership
+from core.models import Hellspawn, Scene, Team, Membership, Feedback
 from core.Mixin import StatusWrapMixin as SW
 
 
@@ -90,3 +90,27 @@ class HellspawnSceneListView(CheckSecurityMixin, StatusWrapMixin, JsonResponseMi
             setattr(scene, 'hellspawn_info', {'name': hellspawn.name, 'count': hellspawn_count})
         return self.render_to_response(
             {'scene_list': sorted(scenes, key=lambda x: x.hellspawn_info['count'], reverse=True)})
+
+
+class FeedbackView(CheckSecurityMixin, StatusWrapMixin, JsonResponseMixin, DetailView):
+    model = Feedback
+    http_method_names = ['post']
+
+    def post(self, request, *args, **kwargs):
+        if not self.wrap_check_sign_result():
+            return self.render_to_response(dict())
+        content = request.POST.get('content')
+        if content:
+            is_advice = True if request.POST.get('is_advice') == 'true' else False
+            scene_id = request.POST.get("scene_id")
+            new_feedback = Feedback(content=content)
+            new_feedback.feed_type = 2 if is_advice else 1
+            if scene_id:
+                scenes = Scene.objects.filter(id=scene_id)
+                if scenes.exists():
+                    new_feedback.scene = scenes[0]
+            new_feedback.save()
+            return self.render_to_response({})
+        self.message = '参数缺失'
+        self.status_code = SW.ERROR_DATA
+        return self.render_to_response({})

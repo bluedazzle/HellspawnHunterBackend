@@ -13,7 +13,7 @@ from core.models import Scene, Team, Membership, Hellspawn
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
-        data = requests.get('https://onmyoji.rapospectre.com/s/file/scene.json').content
+        data = requests.get('http://localhost:8000/s/file/scene.json').content
         json_data = json.loads(data)
         num = 0
         for item in json_data:
@@ -25,6 +25,7 @@ class Command(BaseCommand):
                 for mitm in itm.get('monsters'):
                     hs = Hellspawn.objects.get(name=mitm.get('name'))
                     Membership(hellspawn=hs, count=mitm.get('count'), team=team).save()
+
 
 
 

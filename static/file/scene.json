@@ -623,118 +623,6 @@
 			"count": 2
 			}]
 		}]
-	},{"scene_name": "探索第七章",
-	"team_list": [{
-		"name": "鲤鱼精1",
-		"index": 1,
-		"monsters": [{
-			"name": "鲤鱼精",
-			"count": 3
-			},{
-			"name": "帚神",
-			"count": 1
-			}]
-		},{
-		"name": "鲤鱼精2",
-		"index": 2,
-		"monsters": [{
-			"name": "鲤鱼精",
-			"count": 1
-			},{
-			"name": "帚神",
-			"count": 3
-			}]
-		},{
-		"name": "河童1",
-		"index": 3,
-		"monsters": [{
-			"name": "河童",
-			"count": 1
-			},{
-			"name": "鲤鱼精",
-			"count": 1
-			},{
-			"name": "涂壁",
-			"count": 2
-			}]
-		},{
-		"name": "河童2",
-		"index": 4,
-		"monsters": [{
-			"name": "河童",
-			"count": 1
-			},{
-			"name": "灯笼鬼",
-			"count": 1
-			},{
-			"name": "跳跳犬",
-			"count": 2
-			}]
-		},{
-		"name": "提灯小僧1",
-		"index": 5,
-		"monsters": [{
-			"name": "提灯小僧",
-			"count": 1
-			},{
-			"name": "跳跳犬",
-			"count": 3
-			},{
-			"name": "管狐",
-			"count": 1
-			}]
-		},{
-		"name": "提灯小僧2",
-		"index": 6,
-		"monsters": [{
-			"name": "提灯小僧",
-			"count": 1
-			},{
-			"name": "跳跳犬",
-			"count": 3
-			},{
-			"name": "管狐",
-			"count": 1
-			}]
-		},{
-		"name": "提灯小僧3",
-		"index": 7,
-		"monsters": [{
-			"name": "提灯小僧",
-			"count": 1
-			},{
-			"name": "跳跳犬",
-			"count": 1
-			},{
-			"name": "鲤鱼精",
-			"count": 2
-			},{
-			"name": "管狐",
-			"count": 1
-			}]
-		},{
-		"name": "妖狐",
-		"index": 8,
-		"monsters": [{
-			"name": "妖狐",
-			"count": 1
-			},{
-			"name": "涂壁",
-			"count": 1
-			},{
-			"name": "座敷童子",
-			"count": 2
-			},{
-			"name": "管狐",
-			"count": 1
-			},{
-			"name": "寄生魂",
-			"count": 1
-			},{
-			"name": "天邪鬼赤",
-			"count": 2
-			}]
-		}]
 	},{
 	"scene_name": "探索第九章",
 	"team_list": [{
@@ -808,13 +696,10 @@
 		"index": 6,
 		"monsters": [{
 			"name": "孟婆",
-			"count": 1
+			"count": 2
 			},{
 			"name": "饿鬼",
 			"count": 3
-			},{
-			"name": "孟婆",
-			"count": 1
 			},{
 			"name": "灯笼鬼",
 			"count": 1
@@ -898,16 +783,13 @@
 		"index": 6,
 		"monsters": [{
 			"name": "酒吞童子",
-			"count": 1
+			"count": 2
 			},{
 			"name": "跳跳哥哥",
 			"count": 1
 			},{
 			"name": "食发鬼",
 			"count": 2
-			},{
-			"name": "酒吞童子",
-			"count": 1
 			},{
 			"name": "兵俑",
 			"count": 2
@@ -992,16 +874,13 @@
 		"index": 7,
 		"monsters": [{
 			"name": "鬼女红叶",
-			"count": 1
+			"count": 2
 			},{
 			"name": "童女",
 			"count": 1
 			},{
 			"name": "天邪鬼青",
 			"count": 2
-			},{
-			"name": "鬼女红叶",
-			"count": 1
 			},{
 			"name": "骨女",
 			"count": 1
@@ -1095,16 +974,13 @@
 		"index": 7,
 		"monsters": [{
 			"name": "雪女",
-			"count": 1
+			"count": 2
 			},{
 			"name": "寄生魂",
 			"count": 1
 			},{
 			"name": "武士之灵",
 			"count": 2
-			},{
-			"name": "雪女",
-			"count": 1
 			},{
 			"name": "跳跳妹妹",
 			"count": 1
@@ -1267,14 +1143,11 @@
 		"name": "首领",
 		"index": 7,
 		"monsters": [{
-			"name": "食梦貘",
-			"count": 1
-			},{
 			"name": "天邪鬼赤",
 			"count": 3
 			},{
 			"name": "食梦貘",
-			"count": 4
+			"count": 5
 			}]
 		}]
 	},{
@@ -1437,13 +1310,10 @@
 		"index": 6,
 		"monsters": [{
 			"name": "赤舌",
-			"count": 1
+			"count": 2
 			},{
 			"name": "寄生魂",
 			"count": 3
-			},{
-			"name": "赤舌",
-			"count": 1
 			}]
 		},{
 		"name": "首领",

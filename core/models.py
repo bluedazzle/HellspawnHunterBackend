@@ -43,6 +43,7 @@ class Team(BaseModel):
     monsters = models.ManyToManyField(Hellspawn, related_name='hellspawn_teams', through='Membership',
                                       through_fields=('team', 'hellspawn'))
     belong = models.ForeignKey(Scene, related_name='scene_teams')
+    index = models.IntegerField(default=0)
 
     def __unicode__(self):
         return '{0}: {1}'.format(self.belong.name, self.name)

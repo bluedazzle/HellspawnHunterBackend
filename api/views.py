@@ -128,7 +128,7 @@ class PopularListView(CheckSecurityMixin, StatusWrapMixin, MultipleJsonResponseM
         key_list = cache.keys("*")
         if key_list:
             if len(key_list) > 8:
-                key_list = popular_list[:8]
+                key_list = key_list[:8]
             popular_list = []
             for itm in key_list:
                 key_dict = {"name": cache.get(itm),

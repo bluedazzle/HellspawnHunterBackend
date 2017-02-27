@@ -12,6 +12,8 @@ class Command(BaseCommand):
         for itm in feedbacks:
             if send_template_message(itm):
                 print 'success: {0}'.format(itm.content)
+                itm.send = True
+                itm.save()
             else:
                 print 'faild: {0}'.format(itm.content)
 

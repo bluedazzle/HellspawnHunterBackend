@@ -88,6 +88,7 @@ class Feedback(BaseModel):
     scene = models.ForeignKey(Scene, null=True, blank=True)
     form_id = models.CharField(max_length=128, default='')
     handle = models.BooleanField(default=False)
+    send = models.BooleanField(default=False)
     reply = models.CharField(max_length=128, default='')
     author = models.ForeignKey(WeUser, related_name='my_feedbacks', null=True, blank=True)
 

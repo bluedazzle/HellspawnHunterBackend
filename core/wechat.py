@@ -5,6 +5,7 @@ import json
 import requests
 
 from django.core.cache import cache
+from django.utils import timezone
 
 APP_KEY = 'wxf8a77094412c62d8'
 APP_SECRET = '0bd1ca668a42fa8d65753c8a77f68595'
@@ -28,18 +29,19 @@ def get_access_token():
 def send_template_message(feedback):
     access_token = get_access_token()
     url = 'https://api.weixin.qq.com/cgi-bin/message/wxopen/template/send?access_token={0}'.format(access_token)
+    time = feedback.create_time
+    time = time.astimezone(timezone.get_current_timezone())
     data = {'touser': feedback.author.openid,
             'template_id': 'WcNGPs2DNoa6-hi3WrpxGT4x8CSFx2UFT8pnXlah15c',
             'form_id': feedback.form_id,
             'data': {
-                "keyword1": {"value": feedback.create_time.strftime("%Y-%m-%d %H:%M:%S")},
+                "keyword1": {"value": time.strftime("%Y-%m-%d %H:%M:%S")},
                 "keyword2": {"value": feedback.content},
                 "keyword3": {"value": feedback.reply}
             }}
     res = requests.post(url, data=json.dumps(data)).content
     json_data = json.loads(res)
     status = json_data.get('errcode')
-    print json_data
     if status == 0:
         return True
     return False

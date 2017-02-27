@@ -25,10 +25,10 @@ def get_access_token():
     return None
 
 
-def send_template_message(openid, feedback):
+def send_template_message(feedback):
     access_token = get_access_token()
     url = 'https://api.weixin.qq.com/cgi-bin/message/wxopen/template/send?access_token={0}'.format(access_token)
-    data = {'touser': openid,
+    data = {'touser': feedback.author.openid,
             'template_id': 'WcNGPs2DNoa6-hi3WrpxGT4x8CSFx2UFT8pnXlah15c',
             'form_id': feedback.form_id,
             'data': {

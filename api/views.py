@@ -186,7 +186,10 @@ class UserAuthView(CheckSecurityMixin, StatusWrapMixin, JsonResponseMixin, Detai
                 else:
                     WeUser(openid=openid, weapp_session=session, session=my_session).save()
                 return self.render_to_response({'session': my_session})
-        self.message = 'code 错误'
-        self.status_code = SW.ERROR_VERIFY
+            self.message = 'code 错误'
+            self.status_code = SW.ERROR_VERIFY
+            return self.render_to_response({})
+        self.message = 'code 缺失'
+        self.status_code = SW.INFO_NO_EXIST
         return self.render_to_response({})
 

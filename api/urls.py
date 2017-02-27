@@ -10,4 +10,5 @@ urlpatterns = [
     url(r'^search/(?P<value>.+)', SearchListView.as_view()),
     url(r'^feedback', FeedbackView.as_view()),
     url(r'^populars', PopularListView.as_view()),
+    url(r'^auth', UserAuthView.as_view()),
 ]

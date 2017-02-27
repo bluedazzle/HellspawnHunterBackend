@@ -12,9 +12,11 @@ from core.Mixin.JsonRequestMixin import JsonRequestMixin
 from core.Mixin.StatusWrapMixin import StatusWrapMixin
 from core.dss.Mixin import MultipleJsonResponseMixin, JsonResponseMixin
 from core.dss.Serializer import serializer
-from core.models import Hellspawn, Scene, Team, Membership, Feedback
+from core.models import Hellspawn, Scene, Team, Membership, Feedback, WeUser
 from core.Mixin import StatusWrapMixin as SW
 from django.core.cache import cache
+
+from core.wechat import get_session_key
 
 
 class HellspawnListView(CheckSecurityMixin, StatusWrapMixin, MultipleJsonResponseMixin, ListView):
@@ -56,7 +58,8 @@ class SearchListView(CheckSecurityMixin, StatusWrapMixin, MultipleJsonResponseMi
     def get_queryset(self):
         value = self.kwargs.get('value', '')
         queryset = super(SearchListView, self).get_queryset()
-        queryset = queryset.filter(Q(name__icontains=value) | Q(clue1__icontains=value) | Q(clue2__icontains=value))
+        queryset = queryset.filter(Q(name__icontains=value) | Q(clue1__icontains=value) | Q(clue2__icontains=value) | Q(
+            name_pinyin__icontains=value) | Q(name_abbr__icontains=value))
         return queryset
 
 
@@ -102,11 +105,22 @@ class FeedbackView(CheckSecurityMixin, StatusWrapMixin, JsonResponseMixin, JsonR
         if not self.wrap_check_sign_result():
             return self.render_to_response(dict())
         content = request.POST.get('content')
+        session = request.POST.get('session', None)
+        user = WeUser.objects.filter(session=session)
+        # if not user.exists():
+        #     self.message = 'session 不存在或已过期'
+        #     self.status_code = SW.ERROR_PERMISSION_DENIED
+        #     return self.render_to_response({})
+        # user = user[0]
         if content:
             is_advice = True if request.POST.get('is_advice') == 'true' else False
             scene_id = request.POST.get("scene_id")
+            form_id = request.POST.get('form_id', '')
             new_feedback = Feedback(content=content)
+            new_feedback.form_id = form_id
             new_feedback.feed_type = 2 if is_advice else 1
+            if user.exists():
+                new_feedback.author = user[0]
             if scene_id:
                 scenes = Scene.objects.filter(id=scene_id)
                 if scenes.exists():
@@ -136,3 +150,43 @@ class PopularListView(CheckSecurityMixin, StatusWrapMixin, MultipleJsonResponseM
                 popular_list.append(key_dict)
             return self.render_to_response({'popular_list': popular_list})
         return self.render_to_response({'popular_list': []})
+
+
+class UserAuthView(CheckSecurityMixin, StatusWrapMixin, JsonResponseMixin, DetailView):
+    model = WeUser
+    http_method_names = ['get', 'post']
+
+    def generate_session(self, count=64):
+        ran = string.join(
+            random.sample('ZYXWVUTSRQPONMLKJIHGFEDCBA1234567890zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba',
+                          count)).replace(" ", "")
+        return ran
+
+    def get(self, request, *args, **kwargs):
+        session = request.GET.get('session')
+        user = WeUser.objects.filter(session=session)
+        if user.exists():
+            return self.render_to_response({})
+        self.message = 'session 已过期或不存在'
+        self.status_code = SW.ERROR_PERMISSION_DENIED
+        return self.render_to_response({})
+
+    def post(self, request, *args, **kwargs):
+        code = request.POST.get('code', None)
+        if code:
+            status, openid, session = get_session_key(code)
+            if status:
+                my_session = self.generate_session()
+                user = WeUser.objects.filter(openid=openid)
+                if user.exists():
+                    user = user[0]
+                    user.weapp_session = session
+                    user.session = my_session
+                    user.save()
+                else:
+                    WeUser(openid=openid, weapp_session=session, session=my_session).save()
+                return self.render_to_response({'session': my_session})
+        self.message = 'code 错误'
+        self.status_code = SW.ERROR_VERIFY
+        return self.render_to_response({})
+

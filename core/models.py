@@ -20,6 +20,8 @@ class Hellspawn(BaseModel):
                      (4, 'N')]
 
     name = models.CharField(max_length=20)
+    name_pinyin = models.CharField(max_length=128, default='')
+    name_abbr = models.CharField(max_length=10, default='')
     rarity = models.IntegerField(choices=rarity_choice, default=4)
     picture = models.CharField(max_length=128, null=True, blank=True)
     icon = models.CharField(max_length=128, null=True, blank=True)
@@ -66,6 +68,17 @@ class Membership(BaseModel):
         return '{0}X{1} - {2}{3}'.format(self.hellspawn.name, self.count, self.team.belong.name, self.team.name)
 
 
+class WeUser(BaseModel):
+    openid = models.CharField(max_length=128, unique=True)
+    session = models.CharField(max_length=256, unique=True)
+    weapp_session = models.CharField(max_length=256, unique=True)
+    nick = models.CharField(max_length=50, default='')
+    avatar = models.CharField(max_length=128, default='')
+
+    def __unicode__(self):
+        return self.openid
+
+
 class Feedback(BaseModel):
     feed_choice = [(1, '数据报错'),
                    (2, '吐槽建议')]
@@ -73,8 +86,12 @@ class Feedback(BaseModel):
     content = models.TextField()
     feed_type = models.IntegerField(default=1, choices=feed_choice)
     scene = models.ForeignKey(Scene, null=True, blank=True)
+    form_id = models.CharField(max_length=128, default='')
+    handle = models.BooleanField(default=False)
+    reply = models.CharField(max_length=128, default='')
+    author = models.ForeignKey(WeUser, related_name='my_feedbacks', null=True, blank=True)
 
     def __unicode__(self):
         if self.scene:
-            return '{0}-{1}'.format(self.feed_choice[self.feed_type - 1][1], self.scene.name)
-        return self.feed_choice[self.feed_type - 1][1]
+            return '{0}-{1}-{2}'.format(self.feed_choice[self.feed_type - 1][1], self.scene.name, self.handle)
+        return '{0}-{1}'.format(self.feed_choice[self.feed_type - 1][1], self.handle)

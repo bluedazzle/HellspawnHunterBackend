@@ -36,7 +36,7 @@ def send_template_message(feedback):
                 "keyword2": {"value": feedback.content},
                 "keyword3": {"value": feedback.reply}
             }}
-    res = requests.post(url, data=data).content
+    res = requests.post(url, data=json.dumps(data)).content
     json_data = json.loads(res)
     status = json_data.get('errcode')
     print json_data

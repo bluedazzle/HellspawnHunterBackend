@@ -13,7 +13,7 @@ class Command(BaseCommand):
             if send_template_message(itm):
                 print 'success: {0}'.format(itm.content)
             else:
-                print 'faild: {1}'.format(itm.content)
+                print 'faild: {0}'.format(itm.content)
 
 
 

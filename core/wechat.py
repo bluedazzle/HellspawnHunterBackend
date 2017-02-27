@@ -39,6 +39,7 @@ def send_template_message(feedback):
     res = requests.post(url, data=data).content
     json_data = json.loads(res)
     status = json_data.get('errcode')
+    print json_data
     if status == 0:
         return True
     return False

@@ -143,6 +143,7 @@ class PopularListView(CheckSecurityMixin, StatusWrapMixin, MultipleJsonResponseM
         if not self.wrap_check_sign_result():
             return self.render_to_response(dict())
         key_list = cache.keys("*")
+        key_list.pop('access_token')
         if key_list:
             if len(key_list) > 8:
                 key_list = key_list[:8]

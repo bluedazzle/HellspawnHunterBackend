@@ -152,7 +152,7 @@ class PopularListView(CheckSecurityMixin, StatusWrapMixin, MultipleJsonResponseM
         return self.render_to_response({'popular_list': []})
 
 
-class UserAuthView(CheckSecurityMixin, StatusWrapMixin, JsonResponseMixin, DetailView):
+class UserAuthView(CheckSecurityMixin, StatusWrapMixin, JsonResponseMixin, JsonRequestMixin, DetailView):
     model = WeUser
     http_method_names = ['get', 'post']
 

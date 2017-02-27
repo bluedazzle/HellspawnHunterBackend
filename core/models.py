@@ -89,7 +89,7 @@ class Feedback(BaseModel):
     form_id = models.CharField(max_length=128, default='')
     handle = models.BooleanField(default=False)
     send = models.BooleanField(default=False)
-    reply = models.CharField(max_length=128, default='')
+    reply = models.CharField(max_length=128, default='感谢您的支持, 您提交错误已被修复!')
     author = models.ForeignKey(WeUser, related_name='my_feedbacks', null=True, blank=True)
 
     def __unicode__(self):

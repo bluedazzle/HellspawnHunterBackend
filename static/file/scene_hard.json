@@ -888,7 +888,7 @@
 		"index": 3,
 		"monsters": [{
 			"name": "独眼小僧",
-			"count": 1
+			"count": 2
 			},{
 			"name": "涂壁",
 			"count": 1
@@ -901,7 +901,7 @@
 		"index": 4,
 		"monsters": [{
 			"name": "独眼小僧",
-			"count": 1
+			"count": 2
 			},{
 			"name": "管狐",
 			"count": 1
@@ -1448,7 +1448,7 @@
 		"name": "狸猫3",
 		"index": 6,
 		"monsters": [{
-			"name": "赤舌",
+			"name": "狸猫",
 			"count": 1
 			},{
 			"name": "小火麒麟",

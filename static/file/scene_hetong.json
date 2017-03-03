@@ -1,0 +1,440 @@
+[{
+	"scene_name": "秘闻副本河童一层",
+	"team_list": [{
+		"name": "第一回合",
+		"index": 1,
+		"monsters": [
+			{
+				"name": "提灯小僧",
+				"count": 3
+			},{
+				"name": "盗墓小鬼",
+				"count": 1
+			}]
+		},{
+		"name": "第二回合",
+		"index": 2,
+		"monsters": [{
+				"name": "童男",
+				"count": 3
+			},{
+				"name": "童女",
+				"count": 1
+			}]
+		},{
+		"name": "第三回合",
+		"index": 3,
+		"monsters": [{
+				"name": "河童",
+				"count": 1
+			},{
+				"name": "奉为达摩",
+				"count": 1
+			},{
+				"name": "招福达摩",
+				"count": 1
+			},{
+				"name": "大吉达摩",
+				"count": 1
+			},{
+				"name": "御行达摩",
+				"count": 1
+			}]
+		}]
+	},{
+	"scene_name": "秘闻副本河童二层",
+	"team_list": [{
+		"name": "第一回合",
+		"index": 1,
+		"monsters": [
+			{
+				"name": "提灯小僧",
+				"count": 3
+			},{
+				"name": "盗墓小鬼",
+				"count": 1
+			}]
+		},{
+		"name": "第二回合",
+		"index": 2,
+		"monsters": [{
+				"name": "山童",
+				"count": 3
+			},{
+				"name": "独眼小僧",
+				"count": 1
+			}]
+		},{
+		"name": "第三回合",
+		"index": 3,
+		"monsters": [{
+				"name": "河童",
+				"count": 1
+			},{
+				"name": "黑童子",
+				"count": 1
+			},{
+				"name": "白童子",
+				"count": 1
+			},{
+				"name": "座敷童子",
+				"count": 1
+			}]
+		}]
+	},{
+	"scene_name": "秘闻副本河童三层",
+	"team_list": [{
+		"name": "第一回合",
+		"index": 1,
+		"monsters": [
+			{
+				"name": "武士之灵",
+				"count": 3
+			},{
+				"name": "惠比寿",
+				"count": 1
+			}]
+		},{
+		"name": "第二回合",
+		"index": 2,
+		"monsters": [{
+				"name": "食发鬼",
+				"count": 3
+			},{
+				"name": "烟烟罗",
+				"count": 1
+			}]
+		},{
+		"name": "第三回合",
+		"index": 3,
+		"monsters": [{
+				"name": "河童",
+				"count": 1
+			},{
+				"name": "灯笼鬼",
+				"count": 2
+			},{
+				"name": "赤舌",
+				"count": 1
+			}]
+		}]
+	},{
+	"scene_name": "秘闻副本河童四层",
+	"team_list": [{
+		"name": "第一回合",
+		"index": 1,
+		"monsters": [
+			{
+				"name": "黑豹",
+				"count": 3
+			},{
+				"name": "镰鼬",
+				"count": 1
+			}]
+		},{
+		"name": "第二回合",
+		"index": 2,
+		"monsters": [{
+				"name": "觉",
+				"count": 3
+			},{
+				"name": "萤草",
+				"count": 1
+			}]
+		},{
+		"name": "第三回合",
+		"index": 3,
+		"monsters": [{
+				"name": "河童",
+				"count": 1
+			},{
+				"name": "丑时之女",
+				"count": 2
+			},{
+				"name": "兵俑",
+				"count": 1
+			}]
+		}]
+	},{
+	"scene_name": "秘闻副本河童五层",
+	"team_list": [{
+		"name": "第一回合",
+		"index": 1,
+		"monsters": [
+			{
+				"name": "蝴蝶精",
+				"count": 2
+			},{
+				"name": "鬼女红叶",
+				"count": 1
+			}]
+		},{
+		"name": "第二回合",
+		"index": 2,
+		"monsters": [{
+				"name": "妖琴师",
+				"count": 2
+			},{
+				"name": "天邪鬼黄",
+				"count": 1
+			}]
+		},{
+		"name": "第三回合",
+		"index": 3,
+		"monsters": [{
+				"name": "河童",
+				"count": 1
+			},{
+				"name": "山兔",
+				"count": 1
+			},{
+				"name": "孟婆",
+				"count": 1
+			},{
+				"name": "樱花妖",
+				"count": 1
+			},{
+				"name": "桃花妖",
+				"count": 1
+			},{
+				"name": "凤凰火",
+				"count": 1
+			}]
+		}]
+	},{
+	"scene_name": "秘闻副本河童六层",
+	"team_list": [{
+		"name": "第一回合",
+		"index": 1,
+		"monsters": [
+			{
+				"name": "鬼使黑",
+				"count": 3
+			},{
+				"name": "鬼使白",
+				"count": 1
+			}]
+		},{
+		"name": "第二回合",
+		"index": 2,
+		"monsters": [{
+				"name": "古笼火",
+				"count": 3
+			},{
+				"name": "座敷童子",
+				"count": 1
+			}]
+		},{
+		"name": "第三回合",
+		"index": 3,
+		"monsters": [{
+				"name": "河童",
+				"count": 1
+			},{
+				"name": "天邪鬼赤",
+				"count": 1
+			},{
+				"name": "天邪鬼黄",
+				"count": 1
+			},{
+				"name": "天邪鬼青",
+				"count": 1
+			},{
+				"name": "天邪鬼绿",
+				"count": 1
+			}]
+		}]
+	},{
+	"scene_name": "秘闻副本河童七层",
+	"team_list": [{
+		"name": "第一回合",
+		"index": 1,
+		"monsters": [
+			{
+				"name": "管狐",
+				"count": 3
+			},{
+				"name": "青行灯",
+				"count": 1
+			}]
+		},{
+		"name": "第二回合",
+		"index": 2,
+		"monsters": [{
+				"name": "首无",
+				"count": 3
+			},{
+				"name": "茨木童子",
+				"count": 1
+			}]
+		},{
+		"name": "第三回合",
+		"index": 3,
+		"monsters": [{
+				"name": "河童",
+				"count": 1
+			},{
+				"name": "雨女",
+				"count": 1
+			},{
+				"name": "食梦貘",
+				"count": 1
+			},{
+				"name": "判官",
+				"count": 1
+			}]
+		}]
+	},{
+	"scene_name": "秘闻副本河童八层",
+	"team_list": [{
+		"name": "第一回合",
+		"index": 1,
+		"monsters": [
+			{
+				"name": "青坊主",
+				"count": 3
+			},{
+				"name": "海坊主",
+				"count": 1
+			}]
+		},{
+		"name": "第二回合",
+		"index": 2,
+		"monsters": [{
+				"name": "荒川之主",
+				"count": 1
+			},{
+				"name": "鲤鱼精",
+				"count": 1
+			},{
+				"name": "吸血姬",
+				"count": 2
+			},{
+				"name": "椒图",
+				"count": 1
+			}]
+		},{
+		"name": "第三回合",
+		"index": 3,
+		"monsters": [{
+				"name": "河童",
+				"count": 1
+			},{
+				"name": "海坊主",
+				"count": 2
+			},{
+				"name": "鲤鱼精",
+				"count": 1
+			},{
+				"name": "椒图",
+				"count": 1
+			},{
+				"name": "荒川之主",
+				"count": 1
+			}]
+		}]
+	},{
+	"scene_name": "秘闻副本河童九层",
+	"team_list": [{
+		"name": "第一回合",
+		"index": 1,
+		"monsters": [
+			{
+				"name": "青蛙瓷器",
+				"count": 3
+			},{
+				"name": "雨女",
+				"count": 1
+			}]
+		},{
+		"name": "第二回合",
+		"index": 2,
+		"monsters": [{
+				"name": "鲤鱼精",
+				"count": 1
+			},{
+				"name": "跳跳妹妹",
+				"count": 1
+			},{
+				"name": "萤草",
+				"count": 1
+			},{
+				"name": "妖刀姬",
+				"count": 1
+			},{
+				"name": "妖狐",
+				"count": 1
+			}]
+		},{
+		"name": "第三回合",
+		"index": 3,
+		"monsters": [{
+				"name": "河童",
+				"count": 1
+			},{
+				"name": "鸦天狗",
+				"count": 2
+			},{
+				"name": "大天狗",
+				"count": 1
+			},{
+				"name": "鲤鱼精",
+				"count": 1
+			},{
+				"name": "阎魔",
+				"count": 1
+			}]
+		}]
+	},{
+	"scene_name": "秘闻副本河童十层",
+	"team_list": [{
+		"name": "第一回合",
+		"index": 1,
+		"monsters": [
+			{
+				"name": "萤草",
+				"count": 3
+			},{
+				"name": "兵俑",
+				"count": 1
+			}]
+		},{
+		"name": "第二回合",
+		"index": 2,
+		"monsters": [{
+				"name": "小鹿男",
+				"count": 2
+			},{
+				"name": "桃花妖",
+				"count": 2
+			},{
+				"name": "椒图",
+				"count": 1
+			},{
+				"name": "跳跳弟弟",
+				"count": 1
+			}]
+		},{
+		"name": "第三回合",
+		"index": 3,
+		"monsters": [{
+				"name": "河童",
+				"count": 1
+			},{
+				"name": "樱花妖",
+				"count": 1
+			},{
+				"name": "鲤鱼精",
+				"count": 1
+			},{
+				"name": "妖狐",
+				"count": 1
+			},{
+				"name": "椒图",
+				"count": 1
+			},{
+				"name": "花鸟卷",
+				"count": 1
+			}]
+		}]
+	}]

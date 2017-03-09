@@ -76,7 +76,7 @@ class WeUser(BaseModel):
     avatar = models.CharField(max_length=128, default='')
 
     def __unicode__(self):
-        return self.openid
+        return self.nick if self.nick else self.openid
 
 
 class Feedback(BaseModel):

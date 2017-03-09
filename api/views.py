@@ -24,7 +24,7 @@ from core.wechat import get_session_key
 
 class HellspawnListView(CheckSecurityMixin, StatusWrapMixin, MultipleJsonResponseMixin, ListView):
     model = Hellspawn
-    paginate_by = 20
+    include_attr = ['id', 'name', 'rarity', 'name_pinyin']
 
 
 class HellspawnDetailView(CheckSecurityMixin, StatusWrapMixin, JsonResponseMixin, DetailView):

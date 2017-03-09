@@ -11,4 +11,5 @@ urlpatterns = [
     url(r'^feedback', FeedbackView.as_view()),
     url(r'^populars', PopularListView.as_view()),
     url(r'^auth', UserAuthView.as_view()),
+    url(r'^user', UserView.as_view()),
 ]

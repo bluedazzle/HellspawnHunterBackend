@@ -177,6 +177,8 @@ class UserAuthView(CheckSecurityMixin, StatusWrapMixin, JsonResponseMixin, JsonR
         return self.render_to_response({})
 
     def post(self, request, *args, **kwargs):
+        if not self.wrap_check_sign_result():
+            return self.render_to_response(dict())
         code = request.POST.get('code', None)
         if code:
             status, openid, session = get_session_key(code)
@@ -198,3 +200,23 @@ class UserAuthView(CheckSecurityMixin, StatusWrapMixin, JsonResponseMixin, JsonR
         self.status_code = SW.INFO_NO_EXIST
         return self.render_to_response({})
 
+
+class UserView(CheckSecurityMixin, StatusWrapMixin, JsonRequestMixin, JsonResponseMixin, DetailView):
+    model = WeUser
+    http_method_names = ['post']
+
+    def post(self, request, *args, **kwargs):
+        if not self.wrap_check_sign_result():
+            return self.render_to_response(dict())
+        session = request.POST.get('session')
+        user = WeUser.objects.filter(session=session)
+        if user.exists():
+            user = user[0]
+            if not user.nick:
+                user.nick = request.POST.get('nick')
+                user.avatar = request.POST.get('avatar')
+                user.save()
+            return self.render_to_response({})
+        self.message = 'session 已过期或不存在'
+        self.status_code = SW.ERROR_PERMISSION_DENIED
+        return self.render_to_response({})

@@ -23,6 +23,7 @@ class Command(BaseCommand):
                 team = Team(name=itm.get('name'), index=itm.get('index'), belong=scene)
                 team.save()
                 for mitm in itm.get('monsters'):
+                    print mitm.get('name')
                     hs = Hellspawn.objects.get(name=mitm.get('name'))
                     Membership(hellspawn=hs, count=mitm.get('count'), team=team).save()
 

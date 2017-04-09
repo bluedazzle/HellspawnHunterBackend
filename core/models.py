@@ -35,6 +35,7 @@ class Hellspawn(BaseModel):
 class Scene(BaseModel):
     name = models.CharField(max_length=20)
     icon = models.CharField(max_length=128, null=True, blank=True)
+    disable = models.BooleanField(default=False)
 
     def __unicode__(self):
         return self.name

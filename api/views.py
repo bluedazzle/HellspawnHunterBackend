@@ -83,7 +83,8 @@ class HellspawnSceneListView(CheckSecurityMixin, StatusWrapMixin, JsonResponseMi
         teams = Team.objects.filter(monsters=hellspawn)
         scenes = []
         for team in teams:
-            scenes.append(team.belong)
+            if not team.belong.disable:
+                scenes.append(team.belong)
         scenes = set(scenes)
         scene_list = []
         for scene in scenes:

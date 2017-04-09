@@ -13,7 +13,7 @@ from core.models import Scene, Team, Membership, Hellspawn
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
-        data = requests.get('https://onmyoji.rapospectre.com/s/file/scene_hetong.json', verify=False).content
+        data = requests.get('https://onmyoji.rapospectre.com/s/file/scene_yunv.json', verify=False).content
         json_data = json.loads(data)
         num = 0
         for item in json_data:

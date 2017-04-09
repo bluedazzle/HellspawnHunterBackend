@@ -1,0 +1,470 @@
+[
+  {
+    "scene_name": "秘闻副本雨女一层",
+    "team_list": [
+      {
+        "name": "第一回合",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "唐纸伞妖",
+            "count": 1
+          },
+          {
+            "name": "盗墓小鬼",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "name": "第二回合",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "九命猫",
+            "count": 3
+          },
+          {
+            "name": "铁鼠",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第三回合",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "雨女",
+            "count": 1
+          },
+          {
+            "name": "座敷童子",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },{
+    "scene_name": "秘闻副本雨女二层",
+    "team_list": [
+      {
+        "name": "第一回合",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "唐纸伞妖",
+            "count": 1
+          },
+          {
+            "name": "盗墓小鬼",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "name": "第二回合",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "九命猫",
+            "count": 3
+          },
+          {
+            "name": "铁鼠",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第三回合",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "雨女",
+            "count": 1
+          },
+          {
+            "name": "首无",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },{
+    "scene_name": "秘闻副本雨女三层",
+    "team_list": [
+      {
+        "name": "第一回合",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "唐纸伞妖",
+            "count": 1
+          },
+          {
+            "name": "盗墓小鬼",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "name": "第二回合",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "九命猫",
+            "count": 3
+          },
+          {
+            "name": "铁鼠",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第三回合",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "雨女",
+            "count": 1
+          },
+          {
+            "name": "武士之灵",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },{
+    "scene_name": "秘闻副本雨女四层",
+    "team_list": [
+      {
+        "name": "第一回合",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "唐纸伞妖",
+            "count": 3
+          },
+          {
+            "name": "赤舌",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第二回合",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "觉",
+            "count": 3
+          },
+          {
+            "name": "丑时之女",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第三回合",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "雨女",
+            "count": 1
+          },
+          {
+            "name": "骨女",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  },{
+    "scene_name": "秘闻副本雨女五层",
+    "team_list": [
+      {
+        "name": "第一回合",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "唐纸伞妖",
+            "count": 3
+          },
+          {
+            "name": "赤舌",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第二回合",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "觉",
+            "count": 3
+          },
+          {
+            "name": "丑时之女",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第三回合",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "雨女",
+            "count": 1
+          },
+          {
+            "name": "烟烟罗",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  },{
+    "scene_name": "秘闻副本雨女六层",
+    "team_list": [
+      {
+        "name": "第一回合",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "唐纸伞妖",
+            "count": 3
+          },
+          {
+            "name": "赤舌",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第二回合",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "觉",
+            "count": 3
+          },
+          {
+            "name": "丑时之女",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第三回合",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "雨女",
+            "count": 1
+          },
+          {
+            "name": "夜叉",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  },{
+    "scene_name": "秘闻副本雨女七层",
+    "team_list": [
+      {
+        "name": "第一回合",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "鸦天狗",
+            "count": 3
+          },
+          {
+            "name": "巫蛊师",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第二回合",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "萤草",
+            "count": 2
+          },
+          {
+            "name": "蝴蝶精",
+            "count": 1
+          },{
+            "name": "三尾狐",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第三回合",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "雨女",
+            "count": 1
+          },
+          {
+            "name": "兵俑",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  },{
+    "scene_name": "秘闻副本雨女八层",
+    "team_list": [
+      {
+        "name": "第一回合",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "鸦天狗",
+            "count": 3
+          },
+          {
+            "name": "巫蛊师",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第二回合",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "跳跳弟弟",
+            "count": 4
+          },
+          {
+            "name": "椒图",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第三回合",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "雨女",
+            "count": 1
+          },
+          {
+            "name": "河童",
+            "count": 5
+          }
+        ]
+      }
+    ]
+  },{
+    "scene_name": "秘闻副本雨女九层",
+    "team_list": [
+      {
+        "name": "第一回合",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "鸦天狗",
+            "count": 3
+          },
+          {
+            "name": "巫蛊师",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第二回合",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "清姬",
+            "count": 2
+          },
+          {
+            "name": "鬼使白",
+            "count": 2
+          },{
+            "name": "判官",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第三回合",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "雨女",
+            "count": 1
+          },
+          {
+            "name": "管狐",
+            "count": 5
+          }
+        ]
+      }
+    ]
+  },{
+    "scene_name": "秘闻副本雨女十层",
+    "team_list": [
+      {
+        "name": "第一回合",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "鸦天狗",
+            "count": 3
+          },
+          {
+            "name": "巫蛊师",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第二回合",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "童男",
+            "count": 1
+          },
+          {
+            "name": "吸血姬",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "name": "第三回合",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "雨女",
+            "count": 1
+          },
+          {
+            "name": "青蛙瓷器",
+            "count": 5
+          }
+        ]
+      }
+    ]
+  }
+
+]

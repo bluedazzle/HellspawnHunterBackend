@@ -1,0 +1,899 @@
+[
+  {
+    "scene_name": "秘闻副本荒川一层",
+    "team_list": [
+      {
+        "name": "第一回合",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "赤舌",
+            "count": 1
+          },
+          {
+            "name": "灯笼鬼",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "name": "第二回合",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "寄生魂",
+            "count": 3
+          },
+          {
+            "name": "武士之灵",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第三回合",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "荒川之主",
+            "count": 1
+          },
+          {
+            "name": "盗墓小鬼",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scene_name": "秘闻副本荒川二层",
+    "team_list": [
+      {
+        "name": "第一回合",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "赤舌",
+            "count": 1
+          },
+          {
+            "name": "灯笼鬼",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "name": "第二回合",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "寄生魂",
+            "count": 3
+          },
+          {
+            "name": "武士之灵",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第三回合",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "荒川之主",
+            "count": 1
+          },
+          {
+            "name": "童女",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scene_name": "秘闻副本荒川三层",
+    "team_list": [
+      {
+        "name": "第一回合",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "赤舌",
+            "count": 1
+          },
+          {
+            "name": "等龙鬼",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "name": "第二回合",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "寄生魂",
+            "count": 3
+          },
+          {
+            "name": "武士之灵",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第三回合",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "荒川之主",
+            "count": 1
+          },
+          {
+            "name": "管狐",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scene_name": "秘闻副本荒川四层",
+    "team_list": [
+      {
+        "name": "第一回合",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "鲤鱼精",
+            "count": 1
+          },
+          {
+            "name": "河童",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "name": "第二回合",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "蝴蝶精",
+            "count": 3
+          },
+          {
+            "name": "海坊主",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第三回合",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "荒川之主",
+            "count": 1
+          },
+          {
+            "name": "鸦天狗",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scene_name": "秘闻副本荒川五层",
+    "team_list": [
+      {
+        "name": "第一回合",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "鲤鱼精",
+            "count": 1
+          },
+          {
+            "name": "河童",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "name": "第二回合",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "蝴蝶精",
+            "count": 3
+          },
+          {
+            "name": "海坊主",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第三回合",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "荒川之主",
+            "count": 1
+          },
+          {
+            "name": "山兔",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scene_name": "秘闻副本荒川六层",
+    "team_list": [
+      {
+        "name": "第一回合",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "鲤鱼精",
+            "count": 1
+          },
+          {
+            "name": "河童",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "name": "第二回合",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "蝴蝶精",
+            "count": 3
+          },
+          {
+            "name": "海坊主",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第三回合",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "荒川之主",
+            "count": 1
+          },
+          {
+            "name": "雪女",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scene_name": "秘闻副本荒川七层",
+    "team_list": [
+      {
+        "name": "第一回合",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "金鱼姬",
+            "count": 1
+          },
+          {
+            "name": "古笼火",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "name": "第二回合",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "夜叉",
+            "count": 4
+          },
+          {
+            "name": "椒图",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第三回合",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "荒川之主",
+            "count": 1
+          },
+          {
+            "name": "清姬",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scene_name": "秘闻副本荒川八层",
+    "team_list": [
+      {
+        "name": "第一回合",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "金鱼姬",
+            "count": 1
+          },
+          {
+            "name": "古笼火",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "name": "第二回合",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "夜叉",
+            "count": 4
+          },
+          {
+            "name": "惠比寿",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "第三回合",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "荒川之主",
+            "count": 1
+          },
+          {
+            "name": "海坊主",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scene_name": "秘闻副本荒川九层",
+    "team_list": [
+      {
+        "name": "第一回合",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "金鱼姬",
+            "count": 1
+          },
+          {
+            "name": "古笼火",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "name": "第二回合",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "荒川之主",
+            "count": 1
+          },
+          {
+            "name": "烟烟罗",
+            "count": 2
+          },
+          {
+            "name": "夜叉",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "name": "第三回合",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "章鱼",
+            "count": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scene_name": "秘闻副本荒川十层",
+    "team_list": [
+      {
+        "name": "第一回合",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "金鱼姬",
+            "count": 1
+          },
+          {
+            "name": "古笼火",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "name": "第二回合",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "大天狗",
+            "count": 1
+          },
+          {
+            "name": "夜叉",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "name": "第三回合",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "荒川之主",
+            "count": 1
+          },
+          {
+            "name": "雪女",
+            "count": 1
+          },
+          {
+            "name": "桃花妖",
+            "count": 1
+          },
+          {
+            "name": "青行灯",
+            "count": 1
+          },
+          {
+            "name": "姑获鸟",
+            "count": 1
+          },
+          {
+            "name": "惠比寿",
+            "count": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scene_name": "探索第十九章",
+    "team_list": [
+      {
+        "name": "清姬1",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "二口女",
+            "count": 1
+          },
+          {
+            "name": "络新妇",
+            "count": 2
+          },
+          {
+            "name": "清姬",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "name": "清姬2",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "清姬",
+            "count": 1
+          },
+          {
+            "name": "二口女",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "name": "络新妇1",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "清姬",
+            "count": 3
+          },
+          {
+            "name": "络新妇",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "name": "络新妇2",
+        "index": 4,
+        "monsters": [
+          {
+            "name": "络新妇",
+            "count": 2
+          },
+          {
+            "name": "清姬",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "name": "二口女1",
+        "index": 5,
+        "monsters": [
+          {
+            "name": "二口女",
+            "count": 1
+          },
+          {
+            "name": "络新妇",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "name": "二口女2",
+        "index": 6,
+        "monsters": [
+          {
+            "name": "二口女",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "name": "二口女3",
+        "index": 6,
+        "monsters": [
+          {
+            "name": "古笼火",
+            "count": 1
+          },
+          {
+            "name": "络新妇",
+            "count": 2
+          },
+          {
+            "name": "二口女",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "name": "首领",
+        "index": 7,
+        "monsters": [
+          {
+            "name": "二口女",
+            "count": 1
+          },
+          {
+            "name": "清姬",
+            "count": 2
+          },
+          {
+            "name": "暗凤凰",
+            "count": 2
+          },
+          {
+            "name": "八百比丘尼",
+            "count": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scene_name": "探索第二十章",
+    "team_list": [
+      {
+        "name": "般若1",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "般若",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "name": "般若2",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "古笼火",
+            "count": 3
+          },
+          {
+            "name": "般若",
+            "count": 1
+          },
+          {
+            "name": "凤凰火",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "般若3",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "古笼火",
+            "count": 3
+          },
+          {
+            "name": "清姬",
+            "count": 2
+          },
+          {
+            "name": "般若",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "古笼火1",
+        "index": 4,
+        "monsters": [
+          {
+            "name": "清姬",
+            "count": 1
+          },
+          {
+            "name": "二口女",
+            "count": 2
+          },
+          {
+            "name": "古笼火",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "古笼火2",
+        "index": 5,
+        "monsters": [
+          {
+            "name": "般若",
+            "count": 4
+          },
+          {
+            "name": "二口女",
+            "count": 1
+          },
+          {
+            "name": "古笼火",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "清姬1",
+        "index": 6,
+        "monsters": [
+          {
+            "name": "般若",
+            "count": 3
+          },
+          {
+            "name": "清姬",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "清姬2",
+        "index": 7,
+        "monsters": [
+          {
+            "name": "古笼火",
+            "count": 5
+          },
+          {
+            "name": "清姬",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "首领",
+        "index": 8,
+        "monsters": [
+          {
+            "name": "般若",
+            "count": 2
+          },
+          {
+            "name": "二口女",
+            "count": 1
+          },
+          {
+            "name": "古笼火",
+            "count": 2
+          },
+          {
+            "name": "妖刀姬",
+            "count": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "scene_name": "探索第二十一章",
+    "team_list": [
+      {
+        "name": "烟烟罗1",
+        "index": 1,
+        "monsters": [
+          {
+            "name": "武士之灵",
+            "count": 3
+          },
+          {
+            "name": "烟烟罗",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "烟烟罗2",
+        "index": 2,
+        "monsters": [
+          {
+            "name": "武士之灵",
+            "count": 2
+          },
+          {
+            "name": "兵俑",
+            "count": 1
+          },
+          {
+            "name": "烟烟罗",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "食发鬼1",
+        "index": 3,
+        "monsters": [
+          {
+            "name": "丑时之女",
+            "count": 2
+          },
+          {
+            "name": "兵俑",
+            "count": 1
+          },
+          {
+            "name": "食发鬼",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "食发鬼2",
+        "index": 4,
+        "monsters": [
+          {
+            "name": "丑时之女",
+            "count": 3
+          },
+          {
+            "name": "食发鬼",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "食发鬼3",
+        "index": 4,
+        "monsters": [
+          {
+            "name": "丑时之女",
+            "count": 2
+          },
+          {
+            "name": "食发鬼",
+            "count": 1
+          },
+          {
+            "name": "兵俑",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "吸血姬1",
+        "index": 5,
+        "monsters": [
+          {
+            "name": "跳跳弟弟",
+            "count": 3
+          },
+          {
+            "name": "吸血姬",
+            "count": 1
+          },
+          {
+            "name": "夜叉",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "吸血姬2",
+        "index": 6,
+        "monsters": [
+          {
+            "name": "跳跳弟弟",
+            "count": 2
+          },
+          {
+            "name": "武士之灵",
+            "count": 1
+          },
+          {
+            "name": "吸血姬",
+            "count": 1
+          },
+          {
+            "name": "夜叉",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "name": "首领",
+        "index": 8,
+        "monsters": [
+          {
+            "name": "莹草",
+            "count": 2
+          },
+          {
+            "name": "吸血姬",
+            "count": 2
+          },
+          {
+            "name": "烟烟罗",
+            "count": 4
+          }
+        ]
+      }
+    ]
+  }
+]
